@@ -1,9 +1,9 @@
 <?php
 $db = array(
 	"host" => "localhost",
-	"user" => "root",
+	"user" => "",
 	"pass" => "",
-	"name" => ""
+	"name" => "poultry_manager"
 );
 
 $connect = mysqli_connect($db["host"], $db["user"], $db["pass"], $db["name"]);
