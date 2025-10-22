@@ -345,10 +345,10 @@
                     Poultry<span>Pro</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about_us.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="contact_us.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about_us.php">About</a></li>
+                    <li><a href="service.php">Services</a></li>
+                    <li><a href="contact_us.php">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -363,37 +363,37 @@
                 <p>Join thousands of poultry farmers managing their operations with PoultryPro</p>
             </div>
             
-            <form class="signup-form">
+            <form class="signup-form" method="POST" action="assets/php/process_signup.php">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" placeholder="Enter your first name" required>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" >
                     </div>
                     
                     <div class="form-group">
                         <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" placeholder="Enter your last name" required>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" >
                     </div>
                 </div>
                 
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" >
                 </div>
                 
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
                 </div>
                 
                 <div class="form-group">
                     <label for="farmName">Farm Name (Optional)</label>
-                    <input type="text" id="farmName" placeholder="Enter your farm name">
+                    <input type="text" id="farmName" name="farmName" placeholder="Enter your farm name">
                 </div>
                 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Create a strong password" required>
+                    <input type="password" id="password" name="password" placeholder="Create a strong password" >
                     <div class="password-strength">
                         <div class="password-strength-bar" id="passwordStrengthBar"></div>
                     </div>
@@ -402,16 +402,14 @@
                 
                 <div class="form-group">
                     <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" >
                 </div>
                 
-                <button type="submit" class="signup-btn">Create Account</button>
+                <button type="submit" class="signup-btn" name="signup">Create Account</button>
             </form>
             
-           
-            
             <div class="login-link">
-                Already have an account? <a href="login.html">Log in here</a>
+                Already have an account? <a href="login.php">Log in here</a>
             </div>
         </div>
     </section>
@@ -492,8 +490,6 @@
         
         // Form validation
         document.querySelector('.signup-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             const firstName = document.getElementById('firstName').value;
             const lastName = document.getElementById('lastName').value;
             const email = document.getElementById('email').value;
@@ -502,18 +498,15 @@
             
             if (!firstName || !lastName || !email || !password || !confirmPassword) {
                 alert('Please fill in all required fields');
+                e.preventDefault();
                 return;
             }
             
             if (password !== confirmPassword) {
                 alert('Passwords do not match');
+                e.preventDefault();
                 return;
             }
-            
-            // Simulate successful signup
-            alert('Account created successfully! Redirecting to login...');
-            // In a real application, you would redirect to the login page
-            // window.location.href = 'login.html?from=signup';
         });
         
         // Simulate linking from the login page
@@ -521,6 +514,8 @@
         if (urlParams.get('from') === 'login') {
             document.querySelector('.signup-logo p').textContent = 'Complete the form below to create your PoultryPro account';
         }
+    
     </script>
+    
 </body>
 </html>

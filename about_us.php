@@ -376,10 +376,10 @@
             <nav class="navbar">
                 <a href="#" class="logo">Poultry<span>Pro</span></a>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="service.html">Services</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="service.php">Services</a></li>
                     <li><a href="#" class="active">About Us</a></li>
-                    <li><a href="contact_us.html">Contact</a></li>
+                    <li><a href="contact_us.php">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -391,7 +391,7 @@
             <div class="hero-content">
                 <h1>Leading Poultry Management Solutions</h1>
                 <p>With over 15 years of experience in revolutionizing poultry farming through innovative technology and expert guidance.</p>
-                <a href="contact_us.html" class="btn">Get In Touch</a>
+                <a href="contact_us.php" class="btn">Get In Touch</a>
             </div>
         </div>
     </section>

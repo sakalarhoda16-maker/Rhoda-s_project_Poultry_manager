@@ -314,9 +314,9 @@
             <nav class="navbar">
                 <a href="#" class="logo">Poultry<span>Pro</span></a>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="service.php">Services</a></li>
+                    <li><a href="about_us.php">About Us</a></li>
                     <li><a href="#" class="active">Contact</a></li>
                 </ul>
             </nav>

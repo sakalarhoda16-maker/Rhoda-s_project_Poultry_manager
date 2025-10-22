@@ -377,10 +377,10 @@
                     Poultry<span>Pro</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about_us.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="contact_us.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about_us.php">About</a></li>
+                    <li><a href="service.php">Services</a></li>
+                    <li><a href="contact_us.php">Contact</a></li>
                 </ul>
                 <button class="menu-btn" id="menuToggle">
                     <i class="fas fa-bars"></i>
@@ -392,10 +392,10 @@
         <div class="mobile-menu" id="mobileMenu">
             <ul>
                 <li>
-                    <a href="index.html">Home</a></li>
-                    <li><a href="about_us.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="contact_us.html">Contact</a></li>
+                    <a href="index.php">Home</a></li>
+                    <li><a href="about_us.php">About</a></li>
+                    <li><a href="service.php">Services</a></li>
+                    <li><a href="contact_us.php">Contact</a></li>
                
             </ul>
         </div>
@@ -407,7 +407,7 @@
             <h1>Effective Poultry Management Solutions</h1>
             <p>Learn how to optimize your poultry operation for better health, productivity, and profitability</p>
             <div class="btn-container">
-                <a href="login.html" class="btn">Get Started Today</a>
+                <a href="login.php" class="btn">Get Started Today</a>
                 </div>
         </div>
     </section>

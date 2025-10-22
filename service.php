@@ -475,10 +475,10 @@
             <button class="mobile-menu-btn">☰</button>
             <nav id="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="about_us.html">About</a></li>
-                    <li><a href="contact_us.html">Contact</a></li>
+                    <li><a href="about_us.php">About</a></li>
+                    <li><a href="contact_us.php">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -489,7 +489,7 @@
         <div class="container">
             <h1>Professional Poultry Management Solutions</h1>
             <p>Streamline your poultry operations with our comprehensive management tools designed to maximize productivity and efficiency.</p>
-            <a href="login.html" class="btn">Get Started</a>
+            <a href="login.php" class="btn">Get Started</a>
             
         </div>
     </section>

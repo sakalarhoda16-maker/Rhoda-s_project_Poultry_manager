@@ -340,10 +340,10 @@
                     Poultry<span>Pro</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about_us.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="contact_us.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about_us.php">About</a></li>
+                    <li><a href="service.php">Services</a></li>
+                    <li><a href="contact_us.php">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -360,12 +360,12 @@
             <form class="login-form">
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" placeholder="Enter your email" >
                 </div>
                 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <input type="password" id="password" placeholder="Enter your password" >
                 </div>
                 
                 <div class="remember-forgot">
@@ -380,7 +380,7 @@
             </form>
             
             <div class="signup-link">
-                Don't have an account? <a href="sign_up.html">Sign up now</a>
+                Don't have an account? <a href="sign_up.php">Sign up now</a>
             </div>
         </div>
     </section>
@@ -397,7 +397,7 @@
 
     <script>
         // Form validation
-        document.querySelector('.login-form').addEventListener('submit', function(e) {
+        /*document.querySelector('.login-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
             const email = document.getElementById('email').value;
@@ -411,7 +411,7 @@
             // Simulate successful login
             alert('Login successful! Redirecting to dashboard...');
             // In a real application, you would redirect to the dashboard page
-            // window.location.href = 'dashboard.html';
+            // window.location.href = 'dashboard.php';
         });
         
         // Simulate linking from the homepage
@@ -419,6 +419,7 @@
         if (urlParams.get('from') === 'homepage') {
             document.querySelector('.login-logo h2').innerHTML = 'Welcome to PoultryPro!<br><small>Please login to continue</small>';
         }
+            */
     </script>
 </body>
 </html>

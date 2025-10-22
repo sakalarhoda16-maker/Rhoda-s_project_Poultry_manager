@@ -1,16 +1,16 @@
 <?php
-$db = array(
-	"host" => "localhost",
-	"user" => "",
-	"pass" => "",
-	"name" => "poultry_manager"
-);
+$servername = "localhost";
+$username = "root"; // default for XAMPP
+$password = ""; // default is empty
+$dbname = "poultry_manager"; // replace with your actual DB name
 
-$connect = mysqli_connect($db["host"], $db["user"], $db["pass"], $db["name"]);
+// Create connection
+$connect = new mysqli($servername, $username, $password, $dbname);
 
-if (!$connect) {
-  die("connection to db failed");
-  exit();
+// Check connection
+if ($connect->connect_error) {
+    die("Connection failed: " . $connect->connect_error);
 } else {
-  // connection is successfull
+    echo "connection successful";
 }
+?>

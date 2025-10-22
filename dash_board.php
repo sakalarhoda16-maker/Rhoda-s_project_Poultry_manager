@@ -794,7 +794,7 @@
                 </div>
                 <div class="user-info">
                     <!-- Home Button -->
-                    <a href="index.html" class="home-button">
+                    <a href="index.php" class="home-button">
 
                         <span>Home</span>
                     </a>
@@ -1505,7 +1505,7 @@
             alert('You have been logged out successfully. Redirecting to login page...');
             
             // In a real application, you would redirect to your login page
-            // window.location.href = 'login.html';
+            // window.location.href = 'login.php';
             
             // For this demo, we'll just reload the page to simulate logout
             location.reload();
